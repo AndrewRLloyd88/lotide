@@ -5,11 +5,10 @@ const assertEqual = function(actual, expected) {
 const findKeyByValue = function(bestTVShowsByGenre, tvShow) {
   //use object.keys to generate an array of all the keys
   let genreList = (Object.keys(bestTVShowsByGenre));
-  console.log(genreList);
-  //console.log(genreList);
+  // console.log(genreList);
   for (let genre of genreList) {
     if (bestTVShowsByGenre[genre] === tvShow) {
-      console.log(genre);
+      // console.log(genre);
       return genre;
     }
   }
