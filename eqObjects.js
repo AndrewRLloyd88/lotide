@@ -19,12 +19,17 @@ const eqArrays = function(array1, array2) {
 
 const eqObjects = function(object1, object2) {
   let result = "";
+  //define objects as keys and compare them if this passes then first check complete.
   let objKeys1 = Object.keys(object1);
   let objKeys2 = Object.keys(object2);
   if (objKeys1.length === objKeys2.length) {
+    //iterate through each key of objkeys1
     for (let key of objKeys1) {
+      //check to see if the object is an array type
       if (Array.isArray(object1[key])) {
+        //run eqArrays on the result to see if arrays are equal
         result = eqArrays(object1[key],object2[key]);
+        //if they aren't an array check to see if the keys match
       } else if (object1[key] === object2[key]) {
         result = true;
       }
