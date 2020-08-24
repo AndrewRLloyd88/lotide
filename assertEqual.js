@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATIOn
+// FUNCTION IMPLEMENTATION
 
 const assertEqual = function(actual, expected) {
   actual === expected ? console.log(`✅ ✅ ✅  Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑 🛑 🛑  Assertion Failed: ${actual} !== ${expected}`);
@@ -13,3 +13,5 @@ assertEqual(null, undefined);
 assertEqual(true, 1 + 1);
 assertEqual(true, true);
 assertEqual(200 - 5, 190 + 5);
+
+module.exports = assertEqual;
