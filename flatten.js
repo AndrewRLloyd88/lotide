@@ -1,24 +1,5 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  } else {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] !== arr2[i]) {
-        return false;
-      }
-    }
-  }
-  return true;
-};
 
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅ ✅ ✅  Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 🛑 🛑  Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
+//flatten is a function that takes a nested array and returns a copy of that array flattened e.g. taking nested arrays and spreading the value into one array
 const flatten = function(array) {
   let flattenedArray = [];
   //loop through the first array
@@ -36,20 +17,6 @@ const flatten = function(array) {
   // }
 };
 
-const result1 = flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]
-const exp1 = [1, 2, 3, 4, 5, 6];
 
-console.log(assertArraysEqual(result1, exp1));
 
-const result2 = flatten(["Leslie", "Andrew", ["Pizza"], ["Holiday", "Hotel"], ["soup"], "Echelon"]);
-
-const exp2 = ["Leslie", "Andrew", "Pizza", "Holiday", "Hotel", "soup", "Echelon"];
-
-console.log(assertArraysEqual(result2, exp2));
-
-//why does this test case fail?
-const result3 = flatten([true, false, NaN, true, [true, false, true]]);
-const exp3 = [true, false, NaN, true, true, false, true];
-// 🛑 🛑 🛑  Assertion Failed: true,false,NaN,true,true,false,true !== true,false,NaN,true,true,false,true
-
-console.log(assertArraysEqual(result3, exp3));
+module.exports = flatten;
