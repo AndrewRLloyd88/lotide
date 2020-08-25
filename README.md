@@ -40,14 +40,14 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Yet to implement:**
 
-*  `assertObjectsEqual()`
-*  `countLetters()` 
-*  `countOnly()` 
-*  `eqObjects()` 
-*  `findKey()` 
-*  `findKeyByValue()` 
-*  `flatten()` 
-*  `letterPositions()` 
-*  `map()`
-*  `takeUntil()`
-*  `without()`
+*  <span style="color:red">assertObjectsEqual()</span>
+*  <span style="color:red">countLetters()</span>
+*  <span style="color:green">countOnly()</span>
+*  <span style="color:red">eqObjects()</span> 
+*  <span style="color:red">findKey()</span>
+*  <span style="color:red">findKeyByValue()</span>
+*  <span style="color:green">flatten()</span>
+*  <span style="color:red">letterPositions()</span>
+*  <span style="color:red">map()</span>
+*  <span style="color:red">takeUntil()</span>
+*  <span style="color:red">without()</span>
